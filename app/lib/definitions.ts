@@ -4,5 +4,11 @@
 // However, these types are generated automatically if you're using an ORM such as Prisma.
 
 export type NodeType = {
-    name: string;
+    value: string,
+    next: NodeType | undefined
+};
+
+export type PositionType = {
+    x: number,
+    y: number
 };
